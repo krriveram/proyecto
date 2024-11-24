@@ -1,4 +1,5 @@
 import random
+import numpy as np
 from CartaYuGiOh import CartaYuGiOh
 
 class Deck:

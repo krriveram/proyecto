@@ -1,4 +1,5 @@
 from CartaYuGiOh import CartaYuGiOh
+from CartaYuGiOh import TipoCarta
 
 class Monstruo:
 
