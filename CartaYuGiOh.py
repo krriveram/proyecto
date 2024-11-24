@@ -1,6 +1,6 @@
-from Proyecto.Atributo import Atributo
-from Proyecto.TipoCarta import TipoCarta
-from Proyecto.TipoMonstruo import TipoMonstruo
+from Atributo import Atributo
+from TipoCarta import TipoCarta
+from TipoMonstruo import TipoMonstruo
 
 class CartaYuGiOh:
   def __init__(self, carta_id, nombre, descripcion, tipo_carta):

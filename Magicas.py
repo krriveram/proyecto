@@ -8,3 +8,4 @@ class Magicas(CartaYuGiOh):
 
     def __str__(self):
         return (f"{super().__str__()} \n Incremento: {self.incremento}")
+    

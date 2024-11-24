@@ -1,10 +1,10 @@
-from Proyecto.CartaYuGiOh import CartaYuGiOh
+from CartaYuGiOh import CartaYuGiOh
 from TipoCarta import TipoCarta
 from Atributo import Atributo
 from TipoMonstruo import TipoMonstruo
 import Trampa
 import Magicas
-import Monstruo
+from Monstruo import Monstruo
 
 def cargar_cartas(archivo):
     cartas = []
