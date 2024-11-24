@@ -85,7 +85,7 @@ class Juego:
         else:
             print("No puedes jugar este tipo de carta.")
             jugador.mano.append(carta)
-    else:
+      else:
         print("Selección no válida.")
 
   def cambiar_turno(self):
