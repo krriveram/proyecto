@@ -91,7 +91,7 @@ class Juego:
   def cambiar_turno(self):
     if self.turno_actual == Turno.JUGADOR:
     self.turno_actual = Turno.MAQUINA
-else:
+    else:
     self.turno_actual = Turno.JUGADOR
 
   def fase_batalla(self):
