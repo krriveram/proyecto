@@ -1,8 +1,7 @@
 from CartaYuGiOh import CartaYuGiOh
 
-class Mounstro:
+class Monstruo:
 
-#constructores
   class Monstruo(CartaYuGiOh):
       def __init__(self, nombre, descripcion, atributo, tipo_monstruo, ataque, defensa):
         super().__init__(nombre, descripcion, TipoCarta.MONSTRUO)
@@ -10,7 +9,7 @@ class Mounstro:
         self.tipo_monstruo = tipo_monstruo
         self.ataque = ataque
         self.defensa = defensa
-        self.modo = True  # True para ataque, False para defensa
+        self.modo = True
   def atacar(self, enemigo):
       if enemigo.modo:
           return self.ataque - enemigo.ataque
