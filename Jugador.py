@@ -21,3 +21,7 @@ class Jugador:
     def magtram_en_tablero(self, carta, posicion, modo):
         self.tablero.colocar_magica_trampa(carta, posicion)
         self.cartasMano.remove(carta)
+
+        '''
+        holi
+        '''
