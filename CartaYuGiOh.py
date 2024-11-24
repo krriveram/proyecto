@@ -71,6 +71,8 @@ cartas_creadas = CartaYuGiOh.cargar_cartas('cartas.txt')
 # Imprimir las cartas creadas para verificar
 for carta in cartas_creadas:
     print(carta)
+for carta in cartas_creadas:
+    print("hola")
       
     
   
