@@ -1,0 +1,26 @@
+1/Gaia, El Cabellero Feroz/ Un caballero cuyo caballo galopa mas rapido que el viento. Su carga en la batalla es una fuerza a considerar./Luz/Guerrero/Monstruo/ 2100/ 2300 
+2/Mago del tiempo/ Una vez por turno: puedes lanzar una moneda y elegir Cara o Cruz. Si aciertas, destruye todos los mounstruos que controle tu adversario. Si fallas, destruye tantos monstruos que controles como sea posible y, si lo haces, recibes daño igual a la mitad del ATK total que esos mounstruos destruidos tenian mientras estaban boca arriba en el Campo./Luz/Lanzador de conjuros/Monstruo/400/500
+3/Chica Maga Oscura/Esta carta gana 300 ATK por cada "Mago Oscuro" o "Mago del Caos Negro" en el cementerio de cualquier jugador./ Oscuridad/Lanzador de Conjutos/ Monstruo/ 1700/ 2000
+4/Buster Blader/ Gana 500 ATK por cada monstruo Dragon que controle tu adversario o que este en su Cementerio./ Tierra/Guerrero/ Mounstruo/ 2300/ 2600
+5/Dragon Negro de Ojos Rojos/ Un dragón feroz con un ataque mortal./ Oscuridad/ Dragon/ Monstruo/ 2000/ 2400
+6/Kuriboh/ Durante el cálculo de daño, si el monstruo de tu adversario ataca (Efecto Rápido): puedes descartar esta carta; no recibes daño de batalla de esa batalla./ Oscuridad/ Demonio/ Monstruo/ 200/ 300
+7/Zombi Esparceplaga/Si esta carta está en tu Cementerio: puedes poner en la parte superior del Deck 1 carta en tu mano; Invoca esta carta de Modo Especial, pero destiérrala cuando deje el Campo./Oscuridad/Zombie/Monstruo/200/400
+8/Zombi Renacido/Mientras no tengas cartas en tu mano y esta carta esté en Posición de Ataque, no puede ser destruida en batalla./Oscuridad/Zombie/Monstruo/1600/1000
+9/Dragón Blanco de Ojos Azules/Este legendario dragón es una poderosa máquina de destrucción. Virtualmente invencible, muy pocos se han enfrentado a esta impresionante criatura y han vivido para contarlo./Luz/Dragon/Mounstruo/2500/3000
+10/Demonio Legendario/Una vez por turno, durante tu Standby Phase: esta carta gana 700 ATK./Oscuridad/Demonio/Monstruo/1800/1500
+11/Guerrero D.D./Después del cálculo de daño, cuando esta carta batalla contra un monstruo: destierra ese monstruo, y además destierra esta carta./Tierra/Guerrero/Monstruo/1000/1200
+12/Mago Oscuro/ El mas grande de los magos en relacion con el ataque y la defensa./Oscuridad/Lanzador de conjuros/ Monstruo/2100/2500
+13/Guerrero del Mar Profundo/Cuando "Umi" está boca arriba en el Campo, esta carta no es afectada por cualquier Carta Mágica./Agua/Guerrero/Monstruo/1800/1600
+14/Espada del Dragón Feroz/Aumenta el ATK de un monstruo de tipo Dragón en 400 puntos. Se destruye si el monstruo equipado es destruido en batalla./Null/Dragón/Mágica/0/400
+15/Barrera Mágica/Aumenta la DEF de un monstruo de tipo Guerrero en 500 puntos. Se destruye si el monstruo equipado es destruido en batalla./Null/Guerrero/Mágica/500/0
+16/Aguijón de la Bestia/Aumenta el ATK de un monstruo de tipo Bestia en 500 puntos. Se destruye si el monstruo equipado es destruido en batalla./Null/Bestia/Mágica/0/500
+17/Manto del Guerrero/Aumenta la DEF de un monstruo de tipo Guerrero en 400 puntos. Se destruye si el monstruo equipado es destruido en batalla./Null/Guerrero/Mágica/400/0
+18/Lanza de la Luz/Aumenta el ATK de un monstruo de tipo Lanzador de Conjuros en 400 puntos. Se destruye si el monstruo equipado es destruido en batalla./Null/Lanzador de Conjuros/Mágica/0/400
+19/Aguijón Infernal/Aumenta el ATK de un monstruo de tipo Demonio en 500 puntos. Se destruye si el monstruo equipado es destruido en batalla./Null/Demonio/Mágica/0/500
+20/Anillo de Defensa de las Sombras/Aumenta la DEF de un monstruo de tipo Zombi en 400 puntos. Se destruye si el monstruo equipado es destruido en batalla./Null/Zombi/Mágica/400/0
+21/Cinturón de Fuego/Aumenta el ATK de un monstruo de tipo Fuego en 500 puntos. Se destruye si el monstruo equipado es destruido en batalla./Null/Fuego/Mágica/0/500
+22/Escudo de Luz/Detiene el ataque de un monstruo con atributo LUZ./LUZ/Null/Trampa/0/0;Murallas del Desierto/Detiene el ataque de un monstruo con atributo TIERRA./TIERRA/Null/Trampa/0/0
+23/Tornado de Viento/Detiene el ataque de un monstruo con atributo VIENTO./VIENTO/Null/Trampa/0/0;Viento Mágico/Detiene el ataque de un monstruo con atributo AGUA./AGUA/Null/Trampa/0/0
+24/Escudo de Llamas/Detiene el ataque de un monstruo con atributo FUEGO./FUEGO/Null/Trampa/0/0;Vínculo Oscuro/Detiene el ataque de un monstruo con atributo OSCURIDAD./OSCURIDAD/Null/Trampa/0/0
+25/Murallas Zombi/Detiene el ataque de un monstruo de tipo Zombi./Null/Zombi/Trampa/0/0;Defensa del Guerrero/Detiene el ataque de un monstruo de tipo Guerrero./Null/Guerrero/Trampa/0/0
+
