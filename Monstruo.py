@@ -9,7 +9,8 @@ class Monstruo:
         self.tipo_monstruo = tipo_monstruo
         self.ataque = ataque
         self.defensa = defensa
-        self.modo = True
+        self.modo = "ataque"
+        self.boca_arriba = True
   def atacar(self, enemigo):
       if enemigo.modo:
           return self.ataque - enemigo.ataque
@@ -21,3 +22,4 @@ class Monstruo:
 
   def get_modo(self):
       return self.modo
+  
