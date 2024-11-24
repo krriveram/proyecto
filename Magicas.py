@@ -1,17 +1,10 @@
 from CartaYuGiOh import CartaYuGiOh, TipoCarta
 
 class Magicas(CartaYuGiOh):
-    def __init__(self, nombre, descripcion, tipo_monstruo, buff):
-        super().__init__(nombre, descripcion, TipoCarta.MAGICA)
-        self.tipo_monstruo = tipo_monstruo
-        self.buff = buff
+    def __init__(self, carta_id, nombre, descripcion, incremento, tipo_objetivo):
+        super().__init__(carta_id, nombre, descripcion, TipoCarta.MAGICA)
+        self.incremento = incremento
+        self.tipo_objetivo = tipo_objetivo
 
-    def posible_buff(self, carta_jugando):
-        return carta_jugando.tipo_monstruo == self.tipo_monstruo
-
-    def activar_buff(self, carta_jugando):
-        if self.posible_buff(carta_jugando):
-            if "ataque" in self.descripcion.lower():
-                carta_jugando.ataque += self.buff
-            elif "defensa" in self.descripcion.lower():
-                carta_jugando.defensa += self.buff
+    def __str__(self):
+        return (f"{super().__str__()} \n Incremento: {self.incremento}")
