@@ -65,14 +65,6 @@ class CartaYuGiOh:
     return f"Nombre: {self.nombre}\nDescripcion: {self.descripcion}\nAtributo: {self.atributo}\nTipo de Monstruo: {self.tipoMonstruo}\nTipo de Carta: {self.tipoCarta}\nDefensa: {self.defensa}\nAtaque: {self.ataque}\n"
 
 
-# Cargar las cartas desde el archivo 'cartas.txt'
-cartas_creadas = CartaYuGiOh.cargar_cartas('cartas.txt')
-
-# Imprimir las cartas creadas para verificar
-for carta in cartas_creadas:
-    print(carta)
-for carta in cartas_creadas:
-    print("hola")
       
     
   
