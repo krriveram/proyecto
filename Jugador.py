@@ -1,7 +1,12 @@
 from Deck import Deck
 from Tablero import Tablero
+import random
+
 
 class Jugador:
+
+    deck=Deck('cartas.txt')
+
     def __init__(self, nombre, deck):
         self.nombre = nombre
         self.vida = 4000
@@ -10,9 +15,19 @@ class Jugador:
         self.tablero = Tablero()
 
     def robar_carta(self):
-        carta = self.deck.robar_carta()
+        carta = self.deck.robarCarta()
         if carta:
             self.cartasMano.append(carta)
+
+    def crearMano(self, archivo):
+        ManoCartas=[]
+        with open(archivo, 'r') as Mano:
+            for linea in Mano:
+                posicionAleatoria=random.randint(1,28)
+                carta=linea.strip('\n').split('/')[posicionAleatoria]
+                while len(ManoCartas)<5:
+                    ManoCartas.append(carta)
+        return ManoCartas
 
     def mons_en_tablero(self, carta, posicion, modo):
         self.tablero.colocar_monstruo(carta, posicion, modo)
