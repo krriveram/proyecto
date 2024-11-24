@@ -3,7 +3,11 @@ from CartaYuGiOh import CartaYuGiOh
 import TipoCarta
 class Deck:
     
-    def __init__(self, archivo):
+    def __init__(self, deck):
+        self.deck=deck
+    
+
+    def crear_deck(self, archivo):
         self.archivo=archivo
         cartasDeck=[]
         contMon=0

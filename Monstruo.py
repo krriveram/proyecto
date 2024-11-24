@@ -3,8 +3,9 @@ from CartaYuGiOh import TipoCarta
 import numpy as np
 
 class Monstruo(CartaYuGiOh):
-    def __init__(self, nombre, descripcion, atributo, tipo_monstruo, ataque, defensa):
+    def __init__(self, id, nombre, descripcion, atributo, tipo_monstruo, ataque, defensa):
         super().__init__(nombre, descripcion, TipoCarta.MONSTRUO)
+        self.id=id
         self.atributo = atributo
         self.tipo_monstruo = tipo_monstruo
         self.ataque = ataque
@@ -61,7 +62,6 @@ class Monstruo(CartaYuGiOh):
             #* * * * * * * *  * * * * * * * * * * *
             #* nombre: Dragón Negro de Ojos Rojos *
             #* ataque: 2000                       *
-            #* defensa: 2400                      *
             #* tipo Atributo: OSCURIDAD           *
             #* tipo Monstruo: DRAGON              *
             #* * * * * * * *  * * * * * * * * * * *
@@ -83,13 +83,8 @@ class Monstruo(CartaYuGiOh):
             #boca arriba
 
             #* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
-            #*  nombre: Dragón Negro de Ojos Rojos , ataque: 2000 ,defensa: 2400, tipo Atributo: OSCURIDAD , tipo Monstruo: DRAGON *
+            #*  nombre: Dragón Negro de Ojos Rojos ,defensa: 2400, tipo Atributo: OSCURIDAD , tipo Monstruo: DRAGON *
             #* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
-
-            #boca abajo
-            #* * * * * * * * * * * * * * * * 
-            #*           Yu-Gi-Oh          *
-            #* * * * * * * * * * * * * * * * 
 
 
 

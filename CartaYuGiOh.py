@@ -8,6 +8,8 @@ class CartaYuGiOh:
     self.nombre = nombre
     self.descripcion = descripcion
     self.tipo_carta = tipo_carta
+
+    
   
   def getNombre(self):
     return self.nombre
