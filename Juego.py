@@ -1,7 +1,7 @@
-from tablero import Tablero
-from jugador import Jugador
-from deck import Deck
-from carta import CartaYuGiOh, Monstruo, Magica, Trampa
+from Tablero import Tablero
+from Jugador import Jugador
+from Deck import Deck
+from CartaYuGiOh import CartaYuGiOh, Monstruo, Magica, Trampa
 from enum import Enum
 
 class Turno(Enum):
@@ -18,7 +18,7 @@ class Juego:
   
   def fase_tomar_carta(self, jugador):
     print('f El jugador: {jugador.nombre} decide robar una carta')
-    if not carta:
+    if len(Deck)-0:
       print(f'No hay mas cartas en el Deck')
 
   def fase_principal(self, jugador):
@@ -43,15 +43,15 @@ class Juego:
     print(f'Seleccione cual carta quiere poner en juego')
     for indice, carta in enumerate(jugador.mano):
       print(f'{indice + 1}. {carta}')
-          indice_carta = int(input("Número de carta: ")) - 1
+      indice_carta = int(input("Número de carta: ")) - 1
       
       if 0 <= indice_carta < len(jugador.mano):
-        carta = jugador.mano.pop(seleccion)
+        carta = jugador.mano.pop(indice_carta)
         if carta.tipo == "Monstruo":
             print(f'¿Cómo desea colocar la carta?
             1. Modo Ataque
             2. Modo Defensa')
-            modo = int(input("Selecciona el modo: ")
+            modo = int(input("Selecciona el modo: "))
             if modo == 1:
                 carta.modo = "ataque"
                 carta.boca_arriba = True
@@ -90,9 +90,9 @@ class Juego:
   
     def cambiar_turno(self):
       if self.turno_actual == Turno.JUGADOR:
-      self.turno_actual = Turno.MAQUINA
+        self.turno_actual = Turno.MAQUINA
       else:
-      self.turno_actual = Turno.JUGADOR
+       self.turno_actual = Turno.JUGADOR
   
     def fase_batalla(self, atacante):
         if atacante == self.maquina:
@@ -200,3 +200,6 @@ class Juego:
       self.fase_batalla
       self.cambiar_turno()
       self.turno += 1
+    
+
+
