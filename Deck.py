@@ -26,7 +26,5 @@ class Deck:
         return cartasDeck
     
     def robarCarta(self):
-        if self.cartasDeck:
-            cartAle=random.randint(1,49)
-            return self.cartasDeck.pop(cartAle)
-        return None
+        cartAle=random.randint(1,49)
+        return self.pop(cartAle)

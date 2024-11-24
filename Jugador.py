@@ -14,11 +14,6 @@ class Jugador:
         self.cartasMano = []
         self.tablero = Tablero()
 
-    def robar_carta(self):
-        carta = self.deck.robarCarta()
-        if carta:
-            self.cartasMano.append(carta)
-
     def crearMano(self, archivo):
         ManoCartas=[]
         with open(archivo, 'r') as Mano:
@@ -28,6 +23,13 @@ class Jugador:
                 while len(ManoCartas)<5:
                     ManoCartas.append(carta)
         return ManoCartas
+    
+    def robarCartaDeck(self,deck,ManoCartas):
+        self.deck=deck
+        self.ManoCartas=ManoCartas
+        cartaRobada=deck.robarCarta()
+        ManoCartas.append(cartaRobada)
+
 
     def mons_en_tablero(self, carta, posicion, modo):
         self.tablero.colocar_monstruo(carta, posicion, modo)
