@@ -32,3 +32,5 @@ class Deck:
     def robarCarta(self):
         cartAle=random.randint(1,49)
         return self.pop(cartAle)
+
+print("hola")
