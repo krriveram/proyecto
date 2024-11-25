@@ -3,6 +3,7 @@ from Jugador import Jugador
 from Deck import Deck
 from CartaYuGiOh import CartaYuGiOh, Monstruo, Magica, Trampa
 from enum import Enum
+import random as rd
 
 class Turno(Enum):
   JUGADOR = 1
@@ -13,8 +14,12 @@ class Juego:
     self.jugador = jugador
     self.maquina = maquina
     self.tablero = Tablero()
-    self.turno = 1
-    self.turno_actual = Turno.JUGADOR
+    turno=[1,2]
+    seleccionAleatoria=rd.choice(turno) #seleccion aleatoria de quien empieza
+    if seleccionAleatoria==Turno.JUGADOR.value:
+        self.turno_actual = Turno(1)
+    else:
+        self.turno_actual=Turno(2)
   
   def fase_tomar_carta(self, jugador):
     if jugador.deck.cartas:

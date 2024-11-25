@@ -1,3 +1,5 @@
+import TipoCarta
+
 class Tablero:
   def __init__(self):
       self.espacio_monstruo_jugador = [None] * 3
@@ -7,7 +9,7 @@ class Tablero:
 
   def colocar_carta(self, carta, espacio):
       if espacio in range(3):
-          if carta.tipo_carta == 'Monstruo':
+          if carta.TipoCarta.value == 'Monstruo':
               self.espacio_monstruo_jugador[espacio] = carta
           else:
               self.espacio_magtramp_jugador[espacio] = carta

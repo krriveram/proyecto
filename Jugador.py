@@ -5,8 +5,6 @@ import random
 
 class Jugador:
 
-    deck=Deck('cartas.txt')
-
     def __init__(self, nombre, deck):
         self.nombre = nombre
         self.vida = 4000
@@ -14,14 +12,12 @@ class Jugador:
         self.cartasMano = []
         self.tablero = Tablero()
 
-    def crearMano(self, archivo):
+    def crearMano(self, cartas):
         ManoCartas=[]
-        with open(archivo, 'r') as Mano:
-            for linea in Mano:
-                posicionAleatoria=random.randint(1,28)
-                carta=linea.strip('\n').split('/')[posicionAleatoria]
-                while len(ManoCartas)<5:
-                    ManoCartas.append(carta)
+        for k in range(5):
+            posicionAleatoria=random.randint(1,len(cartas)-1)
+            mano=cartas[posicionAleatoria]
+            ManoCartas.append(mano)
         return ManoCartas
     
     def robarCartaDeck(self,deck,ManoCartas):

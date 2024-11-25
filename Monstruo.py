@@ -1,5 +1,4 @@
 from CartaYuGiOh import CartaYuGiOh
-from CartaYuGiOh import TipoCarta
 import numpy as np
 
 class Monstruo(CartaYuGiOh):
