@@ -189,18 +189,6 @@ class Juego:
               print(f"{defensor.nombre} ha sido derrotado.")
               return
   
-  def iniciar_juego(self):
-    print(f'Estamos en el turno {self.turno} y le toca a {self.turno_actual.name}')
-    if self.turno_actual == Turno.JUGADOR:
-      self.fase_tomar_carta(self.jugador)
-      self.fase_principal(self.jugador)
-    else:
-      self.fase_tomar_carta(self.maquina)
-      self.fase_principal(self.maquina)
-    self.fase_batalla
-    self.cambiar_turno()
-    self.turno += 1
-  
   def evaluar_tablero(self):
       defensores = []
       for espacio in self.tablero.espacio_monstruo_jugador:
@@ -290,6 +278,31 @@ class Juego:
                   if menor_defensa is not None:
                       print(f"{carta_atacante.nombre} ataca a {menor_defensa.nombre} (DEF: {menor_defensa.defensa}).")
                       self.resolver_combate(carta_atacante, menor_defensa)
+def iniciar_juego(self):
+    print(f"Jugador: {self.jugador.nombre} vs Máquina: {self.maquina.nombre}")
+    print(f"Vida inicial: {self.jugador.vida} (Jugador), {self.maquina.vida} (Máquina)\n")
+    for _ in range(5):
+        if self.jugador.deck.cartas:
+            self.jugador.cartasMano.append(self.jugador.deck.robarCarta())
+        if self.maquina.deck.cartas:
+            self.maquina.cartasMano.append(self.maquina.deck.robarCarta())
+
+    while self.jugador.vida > 0 and self.maquina.vida > 0:
+        print(f"\nTurno {self.turno}: {'Jugador' if self.turno_actual == Turno.JUGADOR else 'Máquina'}")
+        self.mostrar_tablero()
+        if self.turno_actual == Turno.JUGADOR:
+            self.fase_tomar_carta(self.jugador)
+            self.fase_principal(self.jugador)
+            self.fase_batalla(self.jugador)
+        else:
+            self.accion_maquina()
+
+        self.cambiar_turno()
+        self.turno += 1
+    ganador = self.jugador if self.jugador.vida > 0 else self.maquina
+    print(f"\n¡El ganador es {ganador.nombre}!")
+
+
   
     
     
