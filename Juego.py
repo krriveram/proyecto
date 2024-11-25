@@ -17,10 +17,13 @@ class Juego:
     self.turno_actual = Turno.JUGADOR
   
   def fase_tomar_carta(self, jugador):
-    print('f El jugador: {jugador.nombre} decide robar una carta')
-    if len(Deck)==0:
-      print(f'No hay mas cartas en el Deck')
-
+    if jugador.deck.cartas:
+        carta_robada = jugador.deck.robarCarta()
+        jugador.cartasMano.append(carta_robada)
+        print(f"{jugador.nombre} ha robado una carta: {carta_robada.nombre}")
+    else:
+        print(f"El mazo de {jugador.nombre} está vacío. No puede robar más cartas.")
+      
   def fase_principal(self, jugador):
     while True:
       self.mostrar_tablero()
