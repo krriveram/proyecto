@@ -3,34 +3,27 @@ from CartaYuGiOh import CartaYuGiOh
 import TipoCarta
 class Deck:
     
-    def __init__(self, deck):
-        self.deck=deck
-    
-
-    def crear_deck(self, archivo):
-        self.archivo=archivo
+    def __init__(self, cartas):
+        self.cartas=cartas
         cartasDeck=[]
         contMon=0
         contTram=0
         contMag=0
-        with open(archivo, 'r') as deckCartas:
-            for linea in deckCartas:
-                posicionAleatoria=random.randint(1,28)
-                carta=linea.strip('\n').split('/')[posicionAleatoria]
-                while contMon<20 or contTram<5 or contMag<5:
-                    if carta[5]==TipoCarta.MONSTRUO.value:
-                        cartasDeck.append(carta)
-                        contMon+=1
-                    elif carta[5]==TipoCarta.TRAMPA.value:
-                       cartasDeck.append(carta)
-                       contTram+=1
-                    elif carta[5]==TipoCarta.MAGICA.value:
-                        cartasDeck.append(carta)
-                        contMag+=1
+        for cartita in cartas:
+            while contMon<20 or contTram<5 or contMag<5:
+                if cartita[5]=="MOUNSTRO":
+                    cartasDeck.append(cartita)
+                    contMon+=1
+                elif cartita[5]=="TRAMPA":
+                    cartasDeck.append(cartita)
+                    contTram+=1
+                elif cartita[5]=="MAGICA":
+                    cartasDeck.append(cartita)
+                    contMag+=1
         return cartasDeck
     
     def robarCarta(self):
-        cartAle=random.randint(1,49)
+        cartAle=random.randint(1,len(self))
         return self.pop(cartAle)
 
 print("hola")

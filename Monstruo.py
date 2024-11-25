@@ -3,15 +3,12 @@ from CartaYuGiOh import TipoCarta
 import numpy as np
 
 class Monstruo(CartaYuGiOh):
-    def __init__(self, id, nombre, descripcion, atributo, tipo_monstruo, ataque, defensa):
-        super().__init__(nombre, descripcion, TipoCarta.MONSTRUO)
-        self.id=id
-        self.atributo = atributo
-        self.tipo_monstruo = tipo_monstruo
-        self.ataque = ataque
-        self.defensa = defensa
-        self.modo = "ataque"
-        self.boca_arriba = True
+    def __init__(self, nombre, descripcion, tipo_carta,ataque,defensa,tipoAtributo,tipoMonstruo):
+        super().__init__(self, nombre, descripcion, tipo_carta,ataque,defensa)
+        self.tipoAtributo=tipoAtributo
+        self.tipoMonstruo=tipoMonstruo
+
+
     def atacar(self, enemigo):
         if enemigo.modo:
             return self.ataque - enemigo.ataque

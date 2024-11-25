@@ -18,7 +18,7 @@ class Juego:
   
   def fase_tomar_carta(self, jugador):
     print('f El jugador: {jugador.nombre} decide robar una carta')
-    if len(Deck)-0:
+    if len(Deck)=0:
       print(f'No hay mas cartas en el Deck')
 
   def fase_principal(self, jugador):
