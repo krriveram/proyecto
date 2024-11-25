@@ -201,5 +201,95 @@ class Juego:
     self.cambiar_turno()
     self.turno += 1
   
+  def evaluar_tablero(self):
+      defensores = []
+      for espacio in self.tablero.espacio_monstruo_jugador:
+          if espacio is not None:
+              if isinstance(espacio, Monstruo):
+                  defensores.append(espacio)
   
+      ataque_directo = len(defensores) == 0
+      return defensores, ataque_directo
   
+  def resolver_combate(self, atacante, defensor):
+      if defensor.modo == "ataque":
+          if atacante.ataque > defensor.ataque:
+              print(f"{defensor.nombre} es destruido.")
+              self.tablero.espacio_monstruo_jugador[self.tablero.espacio_monstruo_jugador.index(defensor)] = None
+              daño = atacante.ataque - defensor.ataque
+              self.jugador.vida -= daño
+              print(f"El jugador pierde {daño} puntos de vida. Vida restante: {self.jugador.vida}")
+          elif atacante.ataque < defensor.ataque:
+              print(f"{atacante.nombre} es destruido.")
+              self.tablero.espacio_monstruo_maquina[self.tablero.espacio_monstruo_maquina.index(atacante)] = None
+          else:
+              print("Ambas cartas son destruidas en el combate.")
+              self.tablero.espacio_monstruo_jugador[self.tablero.espacio_monstruo_jugador.index(defensor)] = None
+              self.tablero.espacio_monstruo_maquina[self.tablero.espacio_monstruo_maquina.index(atacante)] = None
+      else:
+          if atacante.ataque > defensor.defensa:
+              print(f"{defensor.nombre} es destruido en modo defensa.")
+              self.tablero.espacio_monstruo_jugador[self.tablero.espacio_monstruo_jugador.index(defensor)] = None
+          else:
+              print("El ataque no tiene efecto.")
+  
+  def accion_maquina(self):
+      print("Turno de la máquina:")
+      self.mostrar_tablero()
+  
+      carta_robada = self.maquina.deck.robarCarta()
+      if carta_robada:
+          self.maquina.cartasMano.append(carta_robada)
+          print(f"La máquina ha robado una carta: {carta_robada.nombre}")
+      else:
+          print("El mazo de la máquina está vacío.")
+  
+      for carta in self.maquina.cartasMano:
+          if isinstance(carta, Magicas) or isinstance(carta, Trampa):
+              espacio_magico = self.buscar_espacio_libre(self.tablero.espacio_magtramp_maquina)
+              if espacio_magico is not None:
+                  self.tablero.espacio_magtramp_maquina[espacio_magico] = carta
+                  self.maquina.cartasMano.remove(carta)
+                  print(f"La máquina ha colocado la carta mágica/trampa: {carta.nombre}.")
+              else:
+                  return
+  
+      for carta in self.maquina.cartasMano:
+          if isinstance(carta, Monstruo):
+              espacio_monstruo = self.buscar_espacio_libre(self.tablero.espacio_monstruo_maquina)
+              if espacio_monstruo is not None:
+                  if carta.ataque > carta.defensa:
+                      carta.modo = "ataque"
+                      carta.boca_arriba = True
+                  else:
+                      carta.modo = "defensa"
+                      carta.boca_arriba = False
+  
+                  self.tablero.espacio_monstruo_maquina[espacio_monstruo] = carta
+                  self.maquina.cartasMano.remove(carta)
+                  print(f"La máquina ha colocado el monstruo: {carta.nombre} en modo {carta.modo}.")
+                  return
+  
+      print("Fase de batalla de la máquina.")
+      defensores, ataque_directo = self.evaluar_tablero()
+      if ataque_directo:
+          print("La máquina realiza un ataque directo al jugador.")
+          total_ataque = sum(carta.ataque for carta in self.tablero.espacio_monstruo_maquina if carta)
+          self.jugador.vida -= total_ataque
+          print(f"El jugador pierde {total_ataque} puntos de vida. Vida restante: {self.jugador.vida}")
+      else:
+          print("La máquina ataca a los defensores del jugador.")
+          for espacio in self.tablero.espacio_monstruo_maquina:
+              if espacio is not None:
+                  carta_atacante = espacio
+                  print(f"La máquina evalúa atacar con {carta_atacante.nombre} (ATK: {carta_atacante.ataque}).")
+                  menor_defensa = None
+                  for defensor in defensores:
+                      if menor_defensa is None or defensor.defensa < menor_defensa.defensa:
+                          menor_defensa = defensor
+                  if menor_defensa is not None:
+                      print(f"{carta_atacante.nombre} ataca a {menor_defensa.nombre} (DEF: {menor_defensa.defensa}).")
+                      self.resolver_combate(carta_atacante, menor_defensa)
+  
+    
+    
