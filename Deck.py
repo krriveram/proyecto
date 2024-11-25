@@ -1,6 +1,4 @@
 import random
-from CartaYuGiOh import CartaYuGiOh
-import TipoCarta
 class Deck:
     
     def __init__(self, cartas):
