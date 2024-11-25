@@ -51,9 +51,9 @@ class Juego:
       if 0 <= indice_carta < len(jugador.mano):
         carta = jugador.mano.pop(indice_carta)
         if carta.tipo == "Monstruo":
-            print(f'¿Cómo desea colocar la carta?
-            1. Modo Ataque
-            2. Modo Defensa')
+            print(f'¿Cómo desea colocar la carta?')
+            print(f'1. Modo Ataque')
+            print(f'2. Modo Defensa')
             modo = int(input("Selecciona el modo: "))
             if modo == 1:
                 carta.modo = "ataque"
