@@ -1,0 +1,85 @@
+monstruo/Águila Celestial/Un águila celestial con estadísticas equilibradas y gran potencial./2040/1383
+monstruo/Demonio Abismal/Un demonio abismal con estadísticas equilibradas y gran potencial./1756/1374
+monstruo/Dragón Verde/Un dragón verde con estadísticas equilibradas y gran potencial./2186/1201
+monstruo/Minotauro Feroz/Un minotauro feroz con estadísticas equilibradas y gran potencial./2257/1486
+monstruo/Fénix Resplandeciente/Un fénix resplandeciente con estadísticas equilibradas y gran potencial./2104/1572
+monstruo/Guardián del Fuego/Un guardián del fuego con estadísticas equilibradas y gran potencial./1997/1378
+monstruo/Golem de Hierro/Un golem de hierro con estadísticas equilibradas y gran potencial./2182/1432
+monstruo/Espíritu del Trueno/Un espíritu del trueno con estadísticas equilibradas y gran potencial./2050/1376
+monstruo/Tigre de Fuego/Un tigre de fuego con estadísticas equilibradas y gran potencial./1781/1296
+monstruo/Fénix Oscuro/Un fénix oscuro con estadísticas equilibradas y gran potencial./1696/1536
+monstruo/Bestia de Cristal/Una bestia de cristal con estadísticas equilibradas y gran potencial./1704/1255
+monstruo/Bestia Dorada/Una bestia dorada con estadísticas equilibradas y gran potencial./1702/1614
+monstruo/Dragón Estelar/Un dragón estelar con estadísticas equilibradas y gran potencial./1962/1890
+monstruo/Coloso Marino/Un coloso marino con estadísticas equilibradas y gran potencial./1981/1808
+monstruo/Guerrero de la Sombra/Un guerrero de la sombra con estadísticas equilibradas y gran potencial./2123/1964
+monstruo/Destructor Arcano/Un destructor arcano con estadísticas equilibradas y gran potencial./1673/1674
+monstruo/Cazador Nocturno/Un cazador nocturno con estadísticas equilibradas y gran potencial./2313/1660
+monstruo/Dragón Carmesí/Un dragón carmesí con estadísticas equilibradas y gran potencial./1811/1231
+monstruo/Tortuga Acorazada/Una tortuga acorazada con estadísticas equilibradas y gran potencial./2175/1224
+monstruo/Guerrero Inquebrantable/Un guerrero inquebrantable con estadísticas equilibradas y gran potencial./2161/1790
+monstruo/Rey Bestia/Un rey bestia con estadísticas equilibradas y gran potencial./1819/1054
+monstruo/Caballero del Abismo/Un caballero del abismo con estadísticas equilibradas y gran potencial./2060/1722
+monstruo/Lobo Plateado/Un lobo plateado con estadísticas equilibradas y gran potencial./1792/1247
+monstruo/Águila Celestial/Un águila celestial con estadísticas equilibradas y gran potencial./1898/1424
+monstruo/Dios de la Tempestad/Un dios de la tempestad con estadísticas equilibradas y gran potencial./1972/1916
+monstruo/Dragón de la Niebla/Un dragón de la niebla con estadísticas equilibradas y gran potencial./1982/1390
+monstruo/Serpiente Cósmica/Una serpiente cósmica con estadísticas equilibradas y gran potencial./1937/1090
+monstruo/Furia del Tigre/Una furia del tigre con estadísticas equilibradas y gran potencial./1803/1288
+monstruo/Espadachín Eterno/Un espadachín eterno con estadísticas equilibradas y gran potencial./1721/1704
+monstruo/Fantasma del Bosque/Un fantasma del bosque con estadísticas equilibradas y gran potencial./2040/1450
+monstruo/Tigre de Fuego/Un tigre de fuego con estadísticas equilibradas y gran potencial./1832/1906
+monstruo/Dragón Carmesí/Un dragón carmesí con estadísticas equilibradas y gran potencial./1827/1303
+monstruo/Fénix Oscuro/Un fénix oscuro con estadísticas equilibradas y gran potencial./1881/1486
+monstruo/Lobo Plateado/Un lobo plateado con estadísticas equilibradas y gran potencial./1744/1373
+monstruo/Minotauro Feroz/Un minotauro feroz con estadísticas equilibradas y gran potencial./2065/1737
+monstruo/Caballero del Abismo/Un caballero del abismo con estadísticas equilibradas y gran potencial./2043/1545
+monstruo/Ángel de Luz/Un ángel de luz con estadísticas equilibradas y gran potencial./2003/1702
+monstruo/Dragón Verde/Un dragón verde con estadísticas equilibradas y gran potencial./2055/1817
+monstruo/Guerrero de la Sombra/Un guerrero de la sombra con estadísticas equilibradas y gran potencial./1718/1915
+monstruo/Tortuga Acorazada/Una tortuga acorazada con estadísticas equilibradas y gran potencial./2154/1142
+monstruo/Dragón Estelar/Un dragón estelar con estadísticas equilibradas y gran potencial./2202/1962
+monstruo/Fénix Resplandeciente/Un fénix resplandeciente con estadísticas equilibradas y gran potencial./1866/1305
+monstruo/Rey Bestia/Un rey bestia con estadísticas equilibradas y gran potencial./2236/1828
+monstruo/Serpiente Cósmica/Una serpiente cósmica con estadísticas equilibradas y gran potencial./2300/1842
+monstruo/Cazador Nocturno/Un cazador nocturno con estadísticas equilibradas y gran potencial./2124/1966
+monstruo/Golem de Hierro/Un golem de hierro con estadísticas equilibradas y gran potencial./2134/1728
+monstruo/Bestia Dorada/Una bestia dorada con estadísticas equilibradas y gran potencial./1901/1128
+monstruo/Águila Celestial/Un águila celestial con estadísticas equilibradas y gran potencial./2103/1565
+monstruo/Fantasma del Bosque/Un fantasma del bosque con estadísticas equilibradas y gran potencial./1774/1596
+monstruo/Destructor Arcano/Un destructor arcano con estadísticas equilibradas y gran potencial./2122/1167
+monstruo/Dragón de la Niebla/Un dragón de la niebla con estadísticas equilibradas y gran potencial./1734/1364
+monstruo/Fénix Oscuro/Un fénix oscuro con estadísticas equilibradas y gran potencial./2008/1391
+monstruo/Dragón Carmesí/Un dragón carmesí con estadísticas equilibradas y gran potencial./1920/1287
+monstruo/Tigre de Fuego/Un tigre de fuego con estadísticas equilibradas y gran potencial./2263/1453
+monstruo/Guardián del Fuego/Un guardián del fuego con estadísticas equilibradas y gran potencial./1691/1454
+monstruo/Dragón Carmesí/Un dragón carmesí con estadísticas equilibradas y gran potencial./1890/2300
+monstruo/Espadachín Eterno/Un espadachín eterno con estadísticas equilibradas y gran potencial./2230/1500
+monstruo/Fénix Resplandeciente/Un fénix resplandeciente con estadísticas equilibradas y gran potencial./2750/2000
+monstruo/Guerrero de la Sombra/Un guerrero de la sombra con estadísticas equilibradas y gran potencial./2100/1800
+monstruo/Tortuga Acorazada/Una tortuga acorazada con estadísticas equilibradas y gran potencial./1750/2400
+monstruo/Bestia de Cristal/Una bestia de cristal con estadísticas equilibradas y gran potencial./1930/2200
+monstruo/Ángel de Luz/Un ángel de luz con estadísticas equilibradas y gran potencial./2500/2100
+monstruo/Demonio Abismal/Un demonio abismal con estadísticas equilibradas y gran potencial./2300/1700
+monstruo/Serpiente Cósmica/Una serpiente cósmica con estadísticas equilibradas y gran potencial./2000/1600
+monstruo/Minotauro Feroz/Un minotauro feroz con estadísticas equilibradas y gran potencial./2400/2100
+magica/Fuerza del Dragón/Incrementa el poder de dragones en batalla./DRAGON/500
+magica/Armadura del Guerrero/Incrementa el poder de guerreros en batalla./GUERRERO/600
+magica/Escudo Espectral/Incrementa el poder de lanzadores de conjuros en batalla./LANZADOR_DE_CONJUROS/400
+magica/Viento Sanador/Incrementa el poder de bestias en batalla./BESTIA/550
+magica/Llama de Poder/Incrementa el poder de demonios en batalla./DEMONIO/700
+magica/Protección Celestial/Incrementa el poder de guerreros en batalla./GUERRERO/300
+magica/Golpe Relámpago/Incrementa el poder de dragones en batalla./DRAGON/450
+magica/Agua Mágica/Incrementa el poder de lanzadores de conjuros en batalla./LANZADOR_DE_CONJUROS/500
+magica/Espinas del Dolor/Incrementa el poder de bestias en batalla./BESTIA/400
+magica/Sello Arcano/Incrementa el poder de demonios en batalla./DEMONIO/350
+trampa/Muralla de Fuego/Detiene ataques de monstruos con atributo fuego./FUEGO
+trampa/Luz Repelente/Detiene ataques de monstruos con atributo luz./LUZ
+trampa/Tormenta de Sombras/Detiene ataques de monstruos con atributo oscuridad./OSCURIDAD
+trampa/Rugido de la Bestia/Detiene ataques de monstruos con atributo tierra./TIERRA
+trampa/Cadenas Eternas/Detiene ataques de monstruos con atributo agua./AGUA
+trampa/Campo Paralizador/Detiene ataques de monstruos con atributo fuego./FUEGO
+trampa/Defensa Arcana/Detiene ataques de monstruos con atributo luz./LUZ
+trampa/Espejo Oscuro/Detiene ataques de monstruos con atributo oscuridad./OSCURIDAD
+trampa/Jaula de Cristal/Detiene ataques de monstruos con atributo tierra./TIERRA
+trampa/Silencio Mortal/Detiene ataques de monstruos con atributo agua./AGUA
