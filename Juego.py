@@ -71,9 +71,27 @@ class Juego:
         print("\n=== Fin del Tablero ===\n")
 
     def mostrar_detalles_monstruo(self, carta):
-        return (f'Monstruo: {carta.nombre} | Atributo: {carta.atributo} | Tipo: {carta.tipo_monstruo} | '
-                f'ATK: {carta.ataque} | DEF: {carta.defensa} | '
-                f'Boca arriba: {"sí" if carta.boca_arriba else "no"} | Modo: {carta.modo}')
+        if carta.boca_arriba.lower()=="si":
+            nombre=carta.nombre
+            atributo=carta.atributo
+            tipo_monstruo=carta.tipo_monstruo
+            ataque=carta.ataque
+            defensa=carta.defensa
+            posicion="si"
+            modo=carta.modo
+
+        else:
+            nombre="✠"
+            atributo="✠"
+            tipo_monstruo="✠"
+            ataque="✠"
+            defensa="✠"
+            posicion="✠"
+            modo="✠"
+
+        return (f'Monstruo: {nombre} | Atributo: {atributo} | Tipo: {tipo_monstruo} | '
+                f'ATK: {ataque} | DEF: {defensa} | '
+                f'Boca arriba: {posicion} | Modo: {modo}')
 
     def fase_tomar_carta(self, jugador):
         if jugador.deck.cartas:
