@@ -8,13 +8,19 @@ class CartaYuGiOh:
         return f"{self.tipo}: {self.nombre} - {self.descripcion}"
 
 class Monstruo(CartaYuGiOh):
-    def __init__(self, nombre, descripcion, ataque, defensa):
+    def __init__(self, nombre, descripcion, ataque, defensa, atributo, tipo_monstruo):
         super().__init__("Monstruo", nombre, descripcion)
         self.ataque = int(ataque)
         self.defensa = int(defensa)
+        self.atributo = atributo
+        self.tipo_monstruo = tipo_monstruo
+        # Nuevos atributos para gestionar la posición en el tablero
+        self.boca_arriba = False
+        self.modo = "defensa"  # Por defecto se colocará en defensa boca abajo
 
     def __repr__(self):
-        return f"Monstruo: {self.nombre} | Ataque: {self.ataque} | Defensa: {self.defensa}"
+        return(f"Monstruo: {self.nombre} | Atributo: {self.atributo} | Tipo: {self.tipo_monstruo} | "
+               f"Ataque: {self.ataque} | Defensa: {self.defensa}")
 
 class Magica(CartaYuGiOh):
     def __init__(self, nombre, descripcion, tipo_objetivo, incremento):
@@ -32,4 +38,3 @@ class Trampa(CartaYuGiOh):
 
     def __repr__(self):
         return f"Trampa: {self.nombre} | Tipo: {self.tipo_objetivo}"
-        

@@ -1,9 +1,9 @@
 from enum import Enum
 
 class TipoMonstruo(Enum):
-  L = "lanzador de conjuros"
-  D = "dragon"
-  Z = "zombie"
-  G = "guerrero"
-  B = "bestia"
-  O = "demonio"
+  L = "LANZADOR_DE_CONJUROS"
+  D = "DRAGON"
+  Z = "ZOMBIE"
+  G = "GUERRERO"
+  B = "BESTIA"
+  O = "DEMONIO"

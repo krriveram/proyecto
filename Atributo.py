@@ -1,9 +1,9 @@
 from enum import Enum
 
 class Atributo(Enum):
-  OSCURIDAD = "oscuridad"
-  LUZ = 'luz'
-  TIERRA = "tierra"
-  AGUA = "agua"
-  FUEGO = "fuego"
-  VIENTO = "viento"
+  OSCURIDAD = "OSCURIDAD"
+  LUZ = "LUZ"
+  TIERRA = "TIERRA"
+  AGUA = "AGUA"
+  FUEGO = "FUEGO"
+  VIENTO = "VIENTO"
