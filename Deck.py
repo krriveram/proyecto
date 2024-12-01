@@ -25,7 +25,7 @@ class Deck:
                 for linea in file:
                     partes = linea.strip().split('/')
                     
-                    if partes[0].lower() == "monstruo" and partes[6]:
+                    if partes[0].lower() == "monstruo":
                         if len(partes) < 7:
                             print(f"Error: Falta información en la línea: {linea}")
                             continue
@@ -78,4 +78,3 @@ class Deck:
     def mostrar_cartas(self):
         for carta in self.cartas:
             print(f"{carta.nombre} - {carta.tipo}")
-cartas=0
