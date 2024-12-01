@@ -67,3 +67,4 @@ class Tablero:
             else:
                 print(f"Espacio {i + 1}: [VACÍO]")
         print("==========================\n")
+
