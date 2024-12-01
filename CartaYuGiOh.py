@@ -14,9 +14,8 @@ class Monstruo(CartaYuGiOh):
         self.defensa = int(defensa)
         self.atributo = atributo
         self.tipo_monstruo = tipo_monstruo
-        # Nuevos atributos para gestionar la posición en el tablero
         self.boca_arriba = False
-        self.modo = "defensa"  # Por defecto se colocará en defensa boca abajo
+        self.modo = "defensa"
 
     def __repr__(self):
         return(f"Monstruo: {self.nombre} | Atributo: {self.atributo} | Tipo: {self.tipo_monstruo} | "
