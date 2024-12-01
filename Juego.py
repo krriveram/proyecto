@@ -4,8 +4,6 @@ from Deck import Deck
 from CartaYuGiOh import Monstruo, Magica, Trampa
 from enum import Enum
 import random as rd
-from colorama import init, Fore,Back
-
 
 class Turno(Enum):
     JUGADOR = 1
@@ -30,8 +28,7 @@ class Juego:
 
     def mostrar_tablero(self):
         print("\n=== Tablero ===")
-        vidaFormato=Fore.GREEN+str(self.jugador.vida)
-        print(f"Vida del Jugador: {vidaFormato} | Vida del BOT: {self.maquina.vida}\n")
+        print(f"Vida del Jugador: {self.jugador.vida} | Vida del BOT: {self.maquina.vida}\n")
 
         self.mostrar_cartas("BOT - Cartas Mágicas/Trampa:", self.tablero["magicas_trampas_maquina"])
         self.mostrar_cartas("BOT - Cartas Monstruo:", self.tablero["monstruos_maquina"], mostrar_detalles=True)
@@ -80,7 +77,7 @@ class Juego:
             carta_robada = jugador.deck.robarCarta()
             jugador.cartasMano.append(carta_robada)
             if jugador == self.jugador:
-                print(f"{Fore.RED+jugador.nombre} ha robado una carta: {carta_robada.nombre}")
+                print(f"{jugador.nombre} ha robado una carta: {carta_robada.nombre}")
         else:
             print(f"El mazo de {jugador.nombre} está vacío. No puede robar más cartas.")
 
